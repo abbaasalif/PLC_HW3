@@ -24,12 +24,21 @@ cout<<"Heap Dynamic: "<<double(start2 / double(CLOCKS_PER_SEC))<< " seconds"<<en
 
 void arrayStatic(){
   static int arr[ARRAY_SIZE];
+  for(int i=0;i<ARRAY_SIZE;i++){
+    arr[i]=i;
+  }
 }
 
 void arrayStackDyanmic(){
   int arr[ARRAY_SIZE];
+  for(int i=0;i<ARRAY_SIZE;i++){
+    arr[i]=i;
+  }
 }
 
 void arrayHeapDyanmic(){
   int* arr = new int[ARRAY_SIZE];
+  for(int i=0;i<ARRAY_SIZE;i++){
+    arr[i]=i;
+  }
 }
